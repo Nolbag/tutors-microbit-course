@@ -1,12 +1,39 @@
-# Microbit-TY-Workshop
+# Micro:bit RC Car Workshop
 
-This repo is for my [Tutors](https://github.com/tutors-sdk/tutors) course for Micro:bits. The course will be held for Transition Year students doing their work experience program but it's applicable for everyone.
+A [Tutors](https://github.com/tutors-sdk/tutors) course that teaches micro:bit coding from scratch and finishes with students programming a radio-controlled car with RFID power-ups. Written for Transition Year students (ages 15-16) on work experience, but it works for any beginner.
 
-The [course website](https://tutors.dev/course/ty-microbitworkshop) is hosted through netlify.
+Adapted by Paul Nolan from the [original course](https://github.com/rh-outreach-courses/tutors-microbit-course) by Michal Lyra.
 
-To setup the tutors course through netlify:
+## Course outline
+
+| Topic | Labs |
+|-------|------|
+| 00 Introduction | Meet the micro:bit, the MakeCode editor, downloading code, first program |
+| 01 Coding Basics | Events & the LED screen, variables, if/else, loops & functions, challenges |
+| 02 Radio Communication | Sender/receiver, tilt remote |
+| 03 Robot Car | Joystick remote, car, RFID power-ups, troubleshooting |
+
+## Hardware
+
+- BBC micro:bit (V2 recommended for sound)
+- Kitronik :MOVE Motor buggy (car)
+- ELECFREAKS Joystick:bit (remote)
+- MFRC522 RFID reader and cards (power-ups)
+
+## MakeCode projects
+
+- Finished car with power-ups: https://makecode.microbit.org/S97008-07416-41442-62980
+- Finished remote: https://makecode.microbit.org/96640-63492-24223-76730
+
+Both use radio group `10`. Each team must change it to a unique number on **both** devices.
+
+## Publishing
+
+To publish the course through Netlify:
 
 * Import the git repository at: https://app.netlify.com/start
 * In the build settings:
      * The build command is: ```deno run -A jsr:@tutors/tutors```
      * The publish directory is ```json```
+
+The course is then available at `https://tutors.dev/course/<netlify-site-name>`.

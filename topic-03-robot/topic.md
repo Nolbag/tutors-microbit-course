@@ -1,3 +1,3 @@
 # Robot Car
 
-Coding the robot car!
+Code the joystick remote, code the car, then add power-ups and race!
