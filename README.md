@@ -2,7 +2,7 @@
 
 A [Tutors](https://github.com/tutors-sdk/tutors) course that teaches micro:bit coding from scratch and finishes with students programming a radio-controlled car with RFID power-ups. Written for Transition Year students (ages 15-16) on work experience, but it works for any beginner.
 
-Adapted by Paul Nolan from the [original course](https://github.com/rh-outreach-courses/tutors-microbit-course) by Michal Lyra.
+Adapted by Paul Nolan and Sophie Hayes from the [original course](https://github.com/rh-outreach-courses/tutors-microbit-course) by Michal Lyra.
 
 ## Course outline
 
