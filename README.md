@@ -29,11 +29,19 @@ Both use radio group `10`. Each team must change it to a unique number on **both
 
 ## Publishing
 
-To publish the course through Netlify:
+The course is hosted on Netlify. Build settings live in `netlify.toml`, so no manual configuration is needed:
 
-* Import the git repository at: https://app.netlify.com/start
-* In the build settings:
-     * The build command is: ```deno run -A jsr:@tutors/tutors```
-     * The publish directory is ```json```
+1. Go to https://app.netlify.com/start and import this GitHub repository
+2. Pick a site name. It becomes part of the course URL.
+3. Deploy. Netlify runs `deno run -A jsr:@tutors/tutors` and publishes the `json` folder.
 
-The course is then available at `https://tutors.dev/course/<netlify-site-name>`.
+The course is then available at `https://tutors.dev/course/<netlify-site-name>`. Every push to `main` redeploys it.
+
+## Local preview
+
+```
+deno run -A jsr:@tutors/tutors-lite
+python3 -m http.server 8080 --directory html
+```
+
+Then open http://127.0.0.1:8080.

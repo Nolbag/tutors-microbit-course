@@ -1,0 +1,15 @@
+# Netlify build settings for the Tutors course.
+# tutors.dev/course/<site-name> loads the generated json/tutors.json from this site.
+[build]
+  command = "deno run -A jsr:@tutors/tutors"
+  publish = "json"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
